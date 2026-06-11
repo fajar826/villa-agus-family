@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nuttontonhomes.com/sitemap.xml

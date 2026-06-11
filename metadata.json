@@ -1,0 +1,8 @@
+{
+  "name": "Villa Agus Familly",
+  "description": "Website travel agent domestik dengan desain premium untuk menjelajahi keindahan Indonesia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
