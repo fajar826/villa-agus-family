@@ -237,8 +237,25 @@ export const HomePage = () => {
         </div>
       </section>
 
+      {/* CTA Section after Kamar */}
+      <section className="py-16 bg-zinc-50 border-t border-zinc-100 text-center">
+        <div className="max-w-7xl mx-auto px-6">
+          <h3 className="text-2xl font-bold font-serif text-text-dark mb-6">
+            {currentLang === "ID" ? "Siap untuk pengalaman liburan tak terlupakan?" : "Ready for an unforgettable holiday experience?"}
+          </h3>
+          <a 
+            href="https://wa.me/6285738285726?text=Halo%2520Villa%2520Agus%2520Familly,%2520saya%2520ingin%2520cek%2520ketersediaan"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-full transition-all duration-300 uppercase tracking-wider text-xs font-bold shadow-lg"
+          >
+            {currentLang === "ID" ? "Hubungi Admin Sekarang" : "Contact Admin Now"}
+          </a>
+        </div>
+      </section>
 
       {/* 5. GALERI SECTION */}
+
       <section id="galeri" className="py-24 bg-zinc-50">
         <div className="max-w-7xl mx-auto px-6">
           
