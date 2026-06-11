@@ -69,24 +69,24 @@ export const galleryImages = [
 
 export const testimonials = [
   {
-    name: "Tamu Keluarga",
-    role: "Keluarga",
-    content: "Villa Agus Familly sangat nyaman dan fasilitasnya lengkap. Sangat cocok untuk liburan keluarga di Karangasem.",
-    avatar: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&q=80&w=150",
-    rating: 5
-  },
-  {
     name: "Budi Santoso",
-    role: "Wisatawan",
-    content: "Keindahan alam yang luar biasa dan menenangkan! Pemandangan dari villa sangat memukau. Sangat direkomendasikan.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150",
+    role: "Tamu Keluarga",
+    content: "Villa Agus Familly luar biasa! Sangat nyaman untuk keluarga besar. Fasilitas per kamarnya lengkap dan privasi sangat terjaga selama kami menginap di sini.",
+    avatar: "https://images.unsplash.com/photo-1596700877995-1772658a5da5?auto=format&fit=crop&q=80&w=150",
     rating: 5
   },
   {
-    name: "Putri Amanda",
+    name: "Sinta Wijaya",
     role: "Wisatawan",
-    content: "Villanya sangat bersih, estetik, dan nyaman. Pelayanan ramah banget. Pasti bakal balik lagi ke sini!",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+    content: "Tempat yang sangat menenangkan di Karangasem. Kamar luas dengan lemari pakaian yang pas, AC dingin, dan pemandangan luar biasa dari villa. Pasti kembali lagi!",
+    avatar: "https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?auto=format&fit=crop&q=80&w=150",
+    rating: 5
+  },
+  {
+    name: "Andi Pratama",
+    role: "Wisatawan",
+    content: "Villanya sangat estetik dan bersih. Fasilitas per kamar (bed, kamar mandi, lemari) sangat memadai. Pelayanan ramahan dan lokasi tenang. Sangat recomended!",
+    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150",
     rating: 5
   }
 ];

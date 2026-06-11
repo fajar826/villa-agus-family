@@ -18,105 +18,32 @@ import {
   Eye
 } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
-import { categorizedGallery } from "../constants";
+import { categorizedGallery, testimonials } from "../constants";
 
 export const KamarPage = () => {
   const { language } = useLanguage();
   const currentLang = (language || "ID") as "ID" | "EN" | "FR" | "DE";
 
   // State for user-submitted reviews with requested live image assets as avatars
-  const [reviews, setReviews] = useState([
-    {
-      id: 1,
-      name: "Cak Slatem",
-      avatar: "https://fusofyeqniyyunromgnh.supabase.co/storage/v1/object/public/pemandangan%20dan%20aktivitas/1.png",
-      rating: 5,
-      relativeTime: {
-        ID: "3 tahun lalu",
-        EN: "3 years ago",
-        FR: "il y a 3 ans",
-        DE: "vor 3 Jahren"
-      },
-      comment: {
-        ID: "Sangat bagus, obstacle utk jeram sungai nya bagus dan menantang. Para Guide nya jg sangat cekatan dan menjaga benar keselamatan peserta nya. Harga cukup murah, cuman satu kurangnya.... kurang panjang rute jeramnya. Semoga pengelola Sanatah bisa menmbah panjang rute jeramnya.",
-        EN: "Extremely great experience, clean and very scenic cottage stay. The guides are highly professional, super active and keep everyone fully safe. Highly recommended homestay and beach experience!",
-        FR: "Superbe vue sur la mer, très calme et paisible. Les guides locaux sont à l'écoute et veillent à l'hospitalité unique.",
-        DE: "Traumhafter Ausblick auf das Meer, sehr ruhig und friedlich. Die lokalen Guides sind hilfsbereit und aufmerksam."
-      }
+  const [reviews, setReviews] = useState(testimonials.map((t, index) => ({
+    id: index + 1,
+    name: t.name,
+    avatar: t.avatar,
+    rating: t.rating,
+    relativeTime: {
+      ID: "Baru saja",
+      EN: "Just now",
+      FR: "À l'instant",
+      DE: "Gerade eben"
     },
-    {
-      id: 2,
-      name: "Wahyudi",
-      avatar: "https://fusofyeqniyyunromgnh.supabase.co/storage/v1/object/public/pemandangan%20dan%20aktivitas/2.png",
-      rating: 5,
-      relativeTime: {
-        ID: "4 tahun lalu",
-        EN: "4 years ago",
-        FR: "il y a 4 ans",
-        DE: "vor 4 Jahren"
-      },
-      comment: {
-        ID: "Wisata alam penuh petualangan dan tempat merefresh pikiran yang penat, banyak pilihan petualangan, tubing, rafting, jeep offroad, outbond dan lain-lain",
-        EN: "An pristine adventure park of nature! Best place to refresh a tired mind. Swimming with harmless baby blacktip sharks right in front of your cottage balcony is surreal.",
-        FR: "Une aventure naturelle incroyable pour se ressourcer. Baignade inoubliable avec des requins de récif inoffensifs juste devant le balcon.",
-        DE: "Ein unberührtes Naturabenteuer! Der perfekte Ort, um den Kopf frei zu bekommen. Das Schwimmen mit Babyscharken direkt vor dem Balkon ist fantastisch."
-      }
-    },
-    {
-      id: 3,
-      name: "Tahnia Rahmasari",
-      avatar: "https://fusofyeqniyyunromgnh.supabase.co/storage/v1/object/public/pemandangan%20dan%20aktivitas/3.png",
-      rating: 5,
-      relativeTime: {
-        ID: "1 tahun lalu",
-        EN: "a year ago",
-        FR: "il y a 1 an",
-        DE: "vor einem Jahr"
-      },
-      comment: {
-        ID: "Pokoknya mantep polll, super helpfull parahh padahal aku book mepet banget tp tetep dibantu dengan baikb sampe tripnya selesaiii. rekomen parahhh ✨✨",
-        EN: "Outstanding hospitality! Super helpful hosts even of short notice setup. Stunning views and private reef was extremely healthy. Absolutely recommend to everyone! ✨✨",
-        FR: "Hospitalité exceptionnelle ! Des hôtes hyper serviables même pour une réservation de dernière minute. Vue imprenable et récif privé incroyable. ✨✨",
-        DE: "Hervorragende Gastfreundschaft! Sehr hilfsbereite Gastgeber trotz kurzfristiger Buchung. Atemberaubende Aussichten und privates Riff. ✨✨"
-      }
-    },
-    {
-      id: 4,
-      name: "Dr. Charles Evans",
-      avatar: "https://fusofyeqniyyunromgnh.supabase.co/storage/v1/object/public/pemandangan%20dan%20aktivitas/3f73941a-0659-41c6-b71a-39929bfdef75.jpeg",
-      rating: 5,
-      relativeTime: {
-        ID: "1 tahun lalu",
-        EN: "a year ago",
-        FR: "il y a 1 an",
-        DE: "vor einem Jahr"
-      },
-      comment: {
-        ID: "Cottage beachfront ekologis yang luar biasa! Langsung di atas air dengan hiu kecil dan terumbu karang di bawah pintu kami. Damai & ramah luar biasa.",
-        EN: "Magnificent beachfront eco-cottage! Directly on the water with baby sharks and corals under our doorstep. Pure luxurious peace & awesome island hospitality.",
-        FR: "Magnifique éco-cottage en bord de mer ! Directement sur l'eau avec des bébés requins et des coraux sous notre porte.",
-        DE: "Wunderschönes, ökologisches Strand-Cottage direkt auf dem Wasser. Kleine Haie und Korallen direkt vor der Tür."
-      }
-    },
-    {
-      id: 5,
-      name: "Putri Amanda",
-      avatar: "https://fusofyeqniyyunromgnh.supabase.co/storage/v1/object/public/pemandangan%20dan%20aktivitas/605fba91-555e-432a-8565-0f187c6f8152.jpeg",
-      rating: 5,
-      relativeTime: {
-        ID: "2 tahun lalu",
-        EN: "2 years ago",
-        FR: "il y a 2 ans",
-        DE: "vor 2 Jahren"
-      },
-      comment: {
-        ID: "Karangnya indah sekali bisa dilihat langsung dari teras cottage! Kamar selalu rapi bersih, kamar mandi semi terbuka keren banget. Homestay impian di Misool!",
-        EN: "The house reefs are so magnificent, visible directly from the deck! Clean bedrooms and amazing open-air private bathroom. A dream stay in Misool!",
-        FR: "Les récifs coralliens sont magnifiques, visibles directement depuis la terrasse ! Chambres propres et salle de bain semi-ouverte fantastique.",
-        DE: "Die Korallenriffe sind herrlich, direkt vom Deck aus zu sehen! Saubere Zimmer und ein tolles halboffenes Badezimmer."
-      }
+    comment: {
+      ID: t.content,
+      EN: t.content,
+      FR: t.content,
+      DE: t.content
     }
-  ]);
+  })));
+;
 
   // Form and Carousel state
   const [activeReviewIdx, setActiveReviewIdx] = useState(0);
@@ -166,22 +93,22 @@ export const KamarPage = () => {
       DE: "Wichtige Fakten"
     },
     bedrooms: {
-      ID: "Kamar Tidur: 3, Kamar Mandi: 3",
-      EN: "Bedrooms: 3, Bathrooms: 3",
-      FR: "Chambres: 3, Salles de Bain: 3",
-      DE: "Schlafzimmer: 3, Badezimmer: 3"
+      ID: "Total Kamar: 3. Fasilitas Per Kamar: 1 Bed, 1 Kamar Mandi Dalam, Lemari Pakaian",
+      EN: "Total Rooms: 3. Per Room: 1 Bed, 1 En-suite Bathroom, Locker",
+      FR: "Total Chambres: 3. Par chambre: 1 Lit, 1 Salle de bain privée, Armoire",
+      DE: "Zimmer gesamt: 3. Pro Zimmer: 1 Bett, 1 En-suite Badezimmer, Schrank"
     },
     capacityDetail: {
-      ID: "Kapasitas Maksimal: 6 Orang",
-      EN: "Max Capacity: 6 Guests",
-      FR: "Capacité Max: 6 Personnes",
-      DE: "Maximale Kapazität: 6 Gäste"
+      ID: "Kapasitas Maksimal: 2 Orang per Kamar",
+      EN: "Max Capacity: 2 Guests per Room",
+      FR: "Capacité Max: 2 Personnes par chambre",
+      DE: "Maximale Kapazität: 2 Gäste pro Zimmer"
     },
     amenities: {
-      ID: "Fasilitas: Free WiFi, Air Panas, AC, Parkir",
-      EN: "Amenities: Free WiFi, Hot Water, AC, Parking",
-      FR: "Commodités: WiFi Gratuit, Eau Chaude, Clim, Parking",
-      DE: "Annehmlichkeiten: Kostenloses WiFi, Warmwasser, AC, Parkplatz"
+      ID: "Fasilitas: Free WiFi, Air Panas, AC, Parkir, Lemari di Setiap Kamar",
+      EN: "Amenities: Free WiFi, Hot Water, AC, Parking, Locker in Each Room",
+      FR: "Commodités: WiFi Gratuit, Eau Chaude, Clim, Parking, Armoire dans chaque chambre",
+      DE: "Annehmlichkeiten: Kostenloses WiFi, Warmwasser, AC, Parkplatz, Schrank in jedem Zimmer"
     },
     viewType: {
       ID: "Pemandangan: Full Ocean View",
@@ -646,12 +573,6 @@ export const KamarPage = () => {
                           {/* Card Header: Avatar, Name & Google Logo on top right */}
                           <div className="flex items-start justify-between gap-2 mb-4">
                             <div className="flex items-center gap-3">
-                              <img
-                                src={rev.avatar}
-                                alt={rev.name}
-                                className="w-11 h-11 rounded-full object-cover border border-zinc-250 shadow-sm"
-                                referrerPolicy="no-referrer"
-                              />
                               <div>
                                 <h4 className="font-sans font-bold text-zinc-900 text-[14px] sm:text-base leading-tight">
                                   {rev.name}
@@ -741,12 +662,6 @@ export const KamarPage = () => {
                       {/* Card Header: Avatar & Name */}
                       <div className="flex items-start justify-between gap-2 mb-3">
                         <div className="flex items-center gap-3.5">
-                          <img
-                            src={rev.avatar}
-                            alt={rev.name}
-                            className="w-10 h-10 rounded-full object-cover border border-zinc-200"
-                            referrerPolicy="no-referrer"
-                          />
                           <div>
                             <h4 className="font-sans font-bold text-zinc-900 text-sm sm:text-base leading-tight">
                               {rev.name}

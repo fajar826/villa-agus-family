@@ -198,6 +198,18 @@ export const HomePage = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="bg-white border border-zinc-100 p-6 rounded-2xl mt-4 shadow-sm">
+                <p className="text-[10px] font-bold text-premium-purple uppercase tracking-widest mb-4">Informasi Harga</p>
+                <div className="grid grid-cols-1 gap-2">
+                  <div className="flex items-center gap-2.5 text-sm text-text-dark font-medium">
+                    Bulanan: <span className="font-bold">Rp 6.000.000</span> / bulan / kamar
+                  </div>
+                  <div className="flex items-center gap-2.5 text-sm text-text-dark font-medium">
+                    Harian: <span className="font-bold">Rp 300.000</span> / hari / kamar
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -616,12 +628,7 @@ export const HomePage = () => {
                           {/* Card Header: Avatar, Name & Google Logo on top right */}
                           <div className="flex items-start justify-between gap-2 mb-4">
                             <div className="flex items-center gap-3">
-                              <img
-                                src={rev.avatar}
-                                alt={rev.name}
-                                className="w-11 h-11 rounded-full object-cover border border-zinc-250 shadow-sm"
-                                referrerPolicy="no-referrer"
-                              />
+
                               <div>
                                 <h4 className="font-sans font-bold text-zinc-900 text-[14px] sm:text-base leading-tight">
                                   {rev.name}
@@ -711,12 +718,7 @@ export const HomePage = () => {
                       {/* Card Header: Avatar & Name */}
                       <div className="flex items-start justify-between gap-2 mb-3">
                         <div className="flex items-center gap-3.5">
-                          <img
-                            src={rev.avatar}
-                            alt={rev.name}
-                            className="w-10 h-10 rounded-full object-cover border border-zinc-200"
-                            referrerPolicy="no-referrer"
-                          />
+
                           <div>
                             <h4 className="font-sans font-bold text-zinc-900 text-sm sm:text-base leading-tight">
                               {rev.name}
