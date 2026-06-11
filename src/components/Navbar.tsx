@@ -228,7 +228,7 @@ export const Navbar = ({ isScrolled, isMobileMenuOpen, setIsMobileMenuOpen }: Na
                           : "border-gray-200 text-text-dark hover:border-gray-300 bg-white"
                       }`}
                     >
-                      {lang.label.split(" - ")[1]}
+                      {lang.label}
                     </button>
                   ))}
                 </div>
