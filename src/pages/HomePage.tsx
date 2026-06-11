@@ -144,7 +144,7 @@ export const HomePage = () => {
               
               <div className="flex flex-wrap items-center justify-center gap-3.5 w-full">
                 <a 
-                  href="https://wa.me/6282199327798?text=Halo%2520Villa%2520Agus%2520Family%252C%2520saya%2520ingin%2520cek%2520ketersediaan"
+                  href="https://wa.me/6285738285726?text=Halo%2520Villa%2520Agus%2520Familly,%2520saya%2520ingin%2520cek%2520ketersediaan"
                   target="_blank"
                   rel="noreferrer"
                   className="bg-emerald-600 hover:bg-emerald-500 hover:text-white text-white px-5 py-3 md:px-8 md:py-4 rounded-full transition-all duration-300 ease-in-out uppercase tracking-wider md:tracking-widest text-[10px] md:text-xs font-bold flex items-center justify-center gap-2 md:gap-3 shadow-xl hover:shadow-emerald-600/20 cursor-pointer active:scale-95 border border-emerald-600 hover:border-emerald-500"
@@ -152,7 +152,7 @@ export const HomePage = () => {
                   {t.hero.cta} <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </a>
                 <Link 
-                  to="/kamar"
+                  to="/informasi"
                   className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-5 py-3 md:px-8 md:py-4 rounded-full transition-all duration-300 uppercase tracking-wider md:tracking-widest text-[10px] md:text-xs font-bold text-center cursor-pointer active:scale-95 inline-block"
                 >
                   {t.hero.explore}

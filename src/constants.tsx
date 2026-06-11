@@ -105,45 +105,52 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: "waktu-terbaik-mengunjungi-misool",
-    title: "Pesona Tersembunyi Karangasem: Destinasi Liburan Tenang di Bali",
+    id: "pesona-karangasem-bali",
+    title: "Keindahan Tersembunyi Karangasem: Surga Tenang di Bali Timur",
     excerpt: "Temukan keindahan alam yang masih asri dan suasana pedesaan yang menenangkan di Karangasem, Bali.",
-    content: `## Mengarungi Musim Terbaik di Misool, Raja Ampat
+    content: `## Menikmati Karangasem: Permata Tersembunyi di Bali Timur
 
-Misool adalah salah satu permata tersembunyi yang menawarkan eksotisme bawah laut dan kedamaian pulau tropis yang tiada duanya. Namun, karena lokasinya yang terpencil di timur Indonesia, memahami kapan waktu terbaik untuk berkunjung (best travel window) sangat krusial agar liburan Anda tidak terhambat ombak besar atau hujan badai.
+Karangasem adalah wilayah yang menawarkan pengalaman berbeda di Bali. Jauh dari hiruk-pikuk pusat pariwisata yang ramai, Karangasem menyimpan ketenangan dan keaslian suasana pedesaan yang sangat menenangkan.
 
-### Musim Terbaik: Oktober hingga April (Matahari Melimpah & Laut Tenang)
+### Mengapa Karangasem Layak Dikunjungi?
 
-Siklus musim di Raja Ampat, khususnya Misool, cenderung berbeda dengan wilayah barat Indonesia. Oktober hingga April dikenal sebagai **Golden Season**. Pada bulan-bulan ini, angin bertiup tenang, ombak laut hampir tidak ada (datar seperti cermin), dan warna air laut memancarkan gradasi biru-hijau toska yang sangat jernih.
+Karangasem memiliki perpaduan antara pesisir pantai dengan latar belakang Gunung Agung yang megah. Pengunjung dapat menikmati hamparan sawah yang hijau, desa-desa adat yang masih terjaga keasliannya, dan pantai-pantai dengan pasir hitam khas vulkanik yang unik.
 
-*   **Under Water Visibility:** Kejernihan air mencapai 20-30 meter, sangat ideal untuk menyegarkan mata saat *snorkeling* tepat di depan **Nut Tonton Homes** atau melakukan penyelaman dalam (*diving*).
-*   **Biota Laut Mengumpul:** Masa-masa ini adalah waktu migrasi pari manta raksasa (*Manta birostris*) dan ikan-ikan pelagis berukuran besar.
+*   **Wisata Budaya:** Anda bisa mengunjungi Pura Besakih, pura terbesar di Bali yang terletak di lereng Gunung Agung.
+*   **Keindahan Pantai:** Pantai Amed dan Candidasa menawarkan suasana yang sangat tenang dan pemandangan laut yang spektakuler, sempurna untuk bersantai.
+*   **Suasana Pedesaan:** Menginap di Villa Agus Familly memberikan akses untuk merasakan langsung keramahan warga lokal dan keindahan alam pedesaan yang damai.
 
-### Musim Angin Selatan: Juni hingga September (Periode Istirahat Resort)
+### Tips Menikmati Karangasem
 
-Dari bulan **Juni hingga September**, angin bertiup kencang dari arah selatan. Ini menyebabkan ombak di sekitar penyeberangan laut Sorong ke Misool menjadi cukup tinggi dan bergejolak. 
-
-Ketenangan tamu adalah prioritas kami. Di bulan-bulan ini, aktivitas penyeberangan boat trip biasanya dibatasi, dan suasana menjadi sangat basah. Kami merekomendasikan Anda untuk merencanakan kepanduan Anda di luar periode ini demi kenyamanan maksimal.
-
-### Tips Tambahan untuk Wisatawan:
-1.  **Pesan Tiket Jauh Hari:** Penyeberangan kapal ferry cepat dari Sorong ke Misool beroperasi terjadwal beberapa kali seminggu. Pastikan mencocokkan tanggal menginap Anda.
-2.  **Hindari High Season Desember:** Liburan akhir tahun biasanya ramai dikunjungi turis. Pilih bulan **November atau Februari-Maret** jika Anda mengidamkan ketenangan pulau privat yang hening, sunyi, dan intim secara total.`,
-    category: "Panduan Musim",
-    author: "Nut Tonton Team",
-    date: "2026-05-15",
-    image: "https://kycscxrffjorfwmuogjp.supabase.co/storage/v1/object/public/galery%20villa%20agus%20family/kamar2.jpeg",
+1.  **Transportasi:** Kami menyarankan Anda untuk menyewa kendaraan pribadi agar lebih fleksibel menjelajahi berbagai spot wisata tersembunyi di Karangasem.
+2.  **Waktu Terbaik:** Kunjungilah di luar musim hujan untuk mendapatkan pemandangan yang maksimal dan perjalanan yang lebih nyaman.
+3.  **Persiapan:** Pastikan membawa kamera untuk mengabadikan momen-momen indah, serta pakaian yang sesuai untuk mengunjungi pura.`,
+    category: "Panduan Wisata",
+    author: "Admin Villa Agus Familly",
+    date: "2026-06-11",
+    image: "https://www.harapanrakyat.com/wp-content/uploads/2022/09/Kabupaten-Karangasem.jpg",
     readTime: "5 min read"
   },
   {
-    id: "checklist-perlengkapan-trip-pulau-terpencil",
+    id: "tips-liburan-keluarga-bali",
     title: "Tips Liburan Keluarga di Bali yang Berkesan",
     excerpt: "Berlibur bersama keluarga ke Bali membutuhkan persiapan matang. Berikut tips agar liburan berjalan lancar.",
-    content: `## Menyiapkan Koper ke Villa Agus Familly
-## ... (content omitted for brevity) ...`,
-    category: "Tips Packing",
-    author: "Admin Villa",
-    date: "2026-05-18",
-    image: "https://kycscxrffjorfwmuogjp.supabase.co/storage/v1/object/public/galery%20villa%20agus%20family/halaman%20depan.jpeg",
+    content: `## Merencanakan Liburan Keluarga yang Menyenangkan di Bali
+
+Berlibur ke Bali bersama keluarga besar adalah momen yang sangat dinantikan. Agar liburan Anda di Villa Agus Familly menyenangkan dan bebas stres, persiapan matang sangat diperlukan.
+
+### Tips Utama:
+
+1.  **Pilih Akomodasi yang Tepat:** Pastikan villa yang dipilih memiliki fasilitas lengkap seperti dapur pribadi dan ruang berkumpul yang luas, seperti di Villa Agus Familly.
+2.  **Susun Itinerary yang Fleksibel:** Jangan terlalu padat dalam menyusun jadwal wisata. Berikan waktu untuk anak-anak atau anggota keluarga lain untuk beristirahat.
+3.  **Bawa Perlengkapan Secukupnya:** Fokuslah pada kenyamanan. Bawa obat-obatan pribadi, sunblock, dan baju ganti yang cukup.
+4.  **Cicipi Kuliner Lokal:** Jangan lewatkan untuk mencoba makanan khas setempat, tapi tetap perhatikan kebutuhan konsumsi keluarga.
+
+Liburan di Karangasem memberikan suasana yang lebih intim dan privat. Nikmati setiap momen kebersamaan Anda bersama orang-orang tercinta.`,
+    category: "Tips Keluarga",
+    author: "Admin Villa Agus Familly",
+    date: "2026-06-11",
+    image: "https://bankraya.co.id/uploads/insights/jO3TRUmMuBAuyilKHgu9Ovjfs3nFoubWiSSjB3Pn.jpg",
     readTime: "4 min read"
   }
 ];
