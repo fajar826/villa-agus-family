@@ -111,14 +111,10 @@ export const HomePage = () => {
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
         {/* Visual Background */}
         <div className="absolute inset-0 z-0 bg-zinc-950">
-          <video 
-            src="https://kycscxrffjorfwmuogjp.supabase.co/storage/v1/object/public/galery%20villa%20agus%20family/hero%20section.mov"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            poster="https://kycscxrffjorfwmuogjp.supabase.co/storage/v1/object/public/galery%20villa%20agus%20family/pemandangan.jpeg"
+          <img 
+            src="https://kycscxrffjorfwmuogjp.supabase.co/storage/v1/object/public/galery%20villa%20agus%20family/kamar2.jpeg"
+            alt="Hero Background"
+            referrerPolicy="no-referrer"
             className="absolute top-0 left-0 w-full h-full object-cover transform-gpu opacity-80 brightness-[0.7] md:brightness-[0.6] transform scale-102 transition-transform duration-1000"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/85 via-black/25 to-black/20 md:from-zinc-950 md:via-transparent md:to-black/40"></div>
@@ -792,7 +788,7 @@ export const HomePage = () => {
       <section className="relative py-28 overflow-hidden bg-zinc-950">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://fusofyeqniyyunromgnh.supabase.co/storage/v1/object/public/pemandangan%20dan%20aktivitas/pemandangan.jpeg" 
+            src="https://kycscxrffjorfwmuogjp.supabase.co/storage/v1/object/public/galery%20villa%20agus%20family/kamar2.jpeg" 
             alt="Booking Banner Background" 
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover opacity-30 filter blur-[2px]"
