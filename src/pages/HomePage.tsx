@@ -112,7 +112,7 @@ export const HomePage = () => {
         {/* Visual Background */}
         <div className="absolute inset-0 z-0 bg-zinc-950">
           <img 
-            src="https://kycscxrffjorfwmuogjp.supabase.co/storage/v1/object/public/galery%20villa%20agus%20family/kamar2.jpeg"
+            src="https://kycscxrffjorfwmuogjp.supabase.co/storage/v1/object/public/galery%20villa%20agus%20family/kamar%20.jpeg"
             alt="Hero Background"
             referrerPolicy="no-referrer"
             className="absolute top-0 left-0 w-full h-full object-cover transform-gpu opacity-80 brightness-[0.7] md:brightness-[0.6] transform scale-102 transition-transform duration-1000"
