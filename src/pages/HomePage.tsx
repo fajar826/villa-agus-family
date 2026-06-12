@@ -337,7 +337,7 @@ export const HomePage = () => {
                 ) : (
                   <img 
                     src={img.url} 
-                    alt={`${img.title} - Nut Tonton Homes Misool Raja Ampat`}
+                    alt={`${img.title} - Villa Agus Familly`}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -345,7 +345,7 @@ export const HomePage = () => {
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
                   <h4 className="text-white font-serif font-bold text-base leading-tight">{img.title}</h4>
                   <p className="text-white/70 text-[10px] uppercase tracking-widest mt-1 flex items-center gap-1">
-                    <MapPin size={10} className="text-premium-purple" /> {img.location}
+                    <MapPin size={10} className="text-premium-purple" /> {img.desc || "Karangasem, Bali"}
                   </p>
                 </div>
               </motion.div>

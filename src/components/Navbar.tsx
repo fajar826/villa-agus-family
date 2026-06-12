@@ -95,6 +95,12 @@ export const Navbar = ({ isScrolled, isMobileMenuOpen, setIsMobileMenuOpen }: Na
           >
             <motion.span layout transition={{ duration: 0.15 }}>{t.nav.gallery}</motion.span>
           </Link>
+          <Link 
+            to="/kontak"
+            className={`cursor-pointer ${isScrolled ? "nav-link" : "nav-link-hero"}`}
+          >
+            <motion.span layout transition={{ duration: 0.15 }}>{t.nav.contact}</motion.span>
+          </Link>
         </div>
 
         {/* Desktop Controls (Dropdown Language & CTA Button) */}
@@ -213,6 +219,7 @@ export const Navbar = ({ isScrolled, isMobileMenuOpen, setIsMobileMenuOpen }: Na
               <button onClick={() => handleNavClick("top")} className="text-left text-2xl font-bold text-text-dark border-b border-gray-100 pb-4 hover:text-premium-green transition-colors bg-transparent border-none py-2">{t.nav.home}</button>
               <Link to="/informasi" onClick={() => setIsMobileMenuOpen(false)} className="text-left text-2xl font-bold text-text-dark border-b border-gray-100 pb-4 hover:text-premium-green transition-colors py-2 block">{t.nav.rooms}</Link>
               <Link to="/galeri" onClick={() => setIsMobileMenuOpen(false)} className="text-left text-2xl font-bold text-text-dark border-b border-gray-100 pb-4 hover:text-premium-green transition-colors py-2 block">{t.nav.gallery}</Link>
+              <Link to="/kontak" onClick={() => setIsMobileMenuOpen(false)} className="text-left text-2xl font-bold text-text-dark border-b border-gray-100 pb-4 hover:text-premium-green transition-colors py-2 block">{t.nav.contact}</Link>
               
               {/* Mobile Dedicated Lang Selection Grid */}
               <div className="mt-4">

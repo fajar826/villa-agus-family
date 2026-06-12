@@ -19,6 +19,7 @@ import { PackagesPage } from "./pages/PackagesPage";
 import { GalleryPage } from "./pages/GalleryPage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import { ContactPage } from "./pages/ContactPage";
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,7 +54,7 @@ export default function App() {
             setIsMobileMenuOpen={setIsMobileMenuOpen} 
           />
 
-           <Routes>
+            <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/informasi" element={<KamarPage />} />
             <Route path="/cottage" element={<KamarPage />} />
@@ -65,6 +66,8 @@ export default function App() {
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:id" element={<BlogPostPage />} />
             <Route path="/activity/:activityId" element={<ActivityDetailPage />} />
+            <Route path="/kontak" element={<ContactPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
 
           <Footer />

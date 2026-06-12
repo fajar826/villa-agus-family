@@ -9,6 +9,11 @@ export interface TranslationType {
     gallery: string;
     blog: string;
     cta: string;
+    about: string;
+    contact: string;
+    menuTitle: string;
+    selectLang: string;
+    checkAvail: string;
   };
   hero: {
     headline: string;
@@ -99,6 +104,8 @@ export const translations: Record<Language, TranslationType> = {
       gallery: "Galeri",
       blog: "Blog",
       cta: "CEK KETERSEDIAAN",
+      about: "Tentang Kami",
+      contact: "Kontak",
       menuTitle: "Menu Navigasi",
       selectLang: "Pilih Bahasa",
       checkAvail: "Cek Ketersediaan?"
@@ -190,6 +197,8 @@ export const translations: Record<Language, TranslationType> = {
       gallery: "Gallery",
       blog: "Blog",
       cta: "CHECK AVAILABILITY",
+      about: "About Us",
+      contact: "Contact Us",
       menuTitle: "Navigation Menu",
       selectLang: "Select Language",
       checkAvail: "Check Availability?"
@@ -281,6 +290,8 @@ export const translations: Record<Language, TranslationType> = {
       gallery: "Galerie",
       blog: "Blog",
       cta: "VÉRIFIER DISPONIBILITÉ",
+      about: "À Propos de Nous",
+      contact: "Contactez-nous",
       menuTitle: "Menu de Navigation",
       selectLang: "Sélectionner la Langue",
       checkAvail: "Vérifier la Disponibilité ?"
@@ -372,6 +383,8 @@ export const translations: Record<Language, TranslationType> = {
       gallery: "Galerie",
       blog: "Blog",
       cta: "WA-VERFÜGBARKEIT",
+      about: "Über Uns",
+      contact: "Kontakt",
       menuTitle: "Navigationsmenü",
       selectLang: "Sprache auswählen",
       checkAvail: "Verfügbarkeit prüfen?"

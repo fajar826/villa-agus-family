@@ -59,21 +59,6 @@ export const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/aktivitas" className="hover:text-premium-green transition-colors">
-                      {t.nav.activities}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/paket" className="hover:text-premium-green transition-colors">
-                      {t.nav.paket}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/tentang-kami" className="hover:text-premium-green transition-colors">
-                      {t.nav.about}
-                    </Link>
-                  </li>
-                  <li>
                     <Link to="/blog" className="hover:text-premium-green transition-colors">
                       {t.nav.gallery} & Blog
                     </Link>
