@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="grad" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </radialGradient>
+  </defs>
+  <!-- Beautiful rounded luxury badge -->
+  <rect width="512" height="512" rx="140" fill="url(#grad)" />
+  
+  <!-- Outer gold-accented boundary lines -->
+  <rect x="40" y="40" width="432" height="432" rx="110" fill="none" stroke="#fbbf24" stroke-width="12" stroke-linecap="round" stroke-dasharray="10 10" opacity="0.3" />
+  <rect x="52" y="52" width="408" height="408" rx="98" fill="none" stroke="#fbbf24" stroke-width="6" opacity="0.8" />
+  
+  <!-- Elegant geometric stylized mountain backdrop (Gunung Agung representation) -->
+  <polygon points="256,110 390,340 122,340" fill="#fbbf24" opacity="0.15" />
+  <polygon points="256,110 330,340 182,340" fill="#ffffff" opacity="0.1" />
+
+  <!-- A stylized villa roof or traditional Balinese temple detail -->
+  <path d="M120 280 L256 160 L392 280" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M150 260 L256 165 L362 260" fill="none" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
+
+  <!-- Tropical palm tree stylized silhouette inside -->
+  <path d="M256 340 L256 220" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" />
+  <!-- Fronds -->
+  <path d="M256 220 Q286 210 306 225" fill="none" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" />
+  <path d="M256 220 Q306 225 316 250" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+  <path d="M256 220 Q226 210 206 225" fill="none" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" />
+  <path d="M256 220 Q206 225 196 250" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+  <path d="M256 220 Q256 195 250 185" fill="none" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Text elements for VA luxury brand -->
+  <text x="255" y="390" font-family="'Space Grotesk', 'Inter', 'Helvetica Neue', sans-serif" font-size="80" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">V A</text>
+  <text x="256" y="435" font-family="'Inter', sans-serif" font-size="22" font-weight="700" fill="#fbbf24" text-anchor="middle" letter-spacing="12">BALI</text>
+</svg>
