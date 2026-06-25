@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://nuttontonhomes.com/sitemap.xml
+Disallow: /api/
+
+Sitemap: https://villaagusfamily.id/sitemap.xml
